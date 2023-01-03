@@ -1,4 +1,4 @@
-package kev.springframework.sfgpetclinic.modle;
+package kev.springframework.modle;
 
 public class Person {
 
