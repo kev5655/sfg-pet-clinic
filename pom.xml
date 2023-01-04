@@ -9,7 +9,7 @@
     </parent>
     <groupId>kev.springframework</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -94,9 +94,9 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:springframeworkguru/sfg-pet-clinic.git</developerConnection>
-        <tag>firstTest</tag>
-    </scm>
+        <developerConnection>scm:https://github.com/kev5655/sfg-pet-clinic.git</developerConnection>
+      <tag>sfg-pet-clinic-0.0.1</tag>
+  </scm>
 
 
 </project>
