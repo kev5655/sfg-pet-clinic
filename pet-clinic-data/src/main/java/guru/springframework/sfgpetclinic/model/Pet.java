@@ -25,6 +25,9 @@ public class Pet extends BaseEntity {
     @Column(name = "birth_date")
     private LocalDate birthDay;
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
+    private Set<Visit> visit = new HashSet<>();
+
     public String getName() {
         return name;
     }
@@ -55,5 +58,13 @@ public class Pet extends BaseEntity {
 
     public void setBirthDay(LocalDate birthDay) {
         this.birthDay = birthDay;
+    }
+
+    public Set<Visit> getVisit() {
+        return visit;
+    }
+
+    public void setVisit(Set<Visit> visit) {
+        this.visit = visit;
     }
 }
