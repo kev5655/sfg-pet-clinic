@@ -1,8 +1,5 @@
 package guru.springframework.sfgpetclinic.model;
 
-import lombok.*;
-import org.springframework.format.annotation.DateTimeFormat;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -23,7 +20,7 @@ public class Pet extends BaseEntity {
     private Owner owner;
 
     @Column(name = "birth_date")
-    private LocalDate birthDay;
+    private LocalDate birthDate;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
     private Set<Visit> visit = new HashSet<>();
@@ -52,12 +49,12 @@ public class Pet extends BaseEntity {
         this.owner = owner;
     }
 
-    public LocalDate getBirthDay() {
-        return birthDay;
+    public LocalDate getBirthDate() {
+        return birthDate;
     }
 
-    public void setBirthDay(LocalDate birthDay) {
-        this.birthDay = birthDay;
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
     }
 
     public Set<Visit> getVisit() {

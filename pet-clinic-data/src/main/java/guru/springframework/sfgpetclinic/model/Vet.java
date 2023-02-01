@@ -13,13 +13,13 @@ public class Vet extends Person {
     @JoinTable(name = "vet_specialties",
             joinColumns = @JoinColumn(name = "vet_id"),
             inverseJoinColumns = @JoinColumn(name = "specialtiy_id"))
-    private Set<Speciality> specialties = new HashSet<>();
+    private Set<Speciality> specialities = new HashSet<>();
 
-    public Set<Speciality> getSpecialties() {
-        return specialties;
+    public Set<Speciality> getSpecialities() {
+        return specialities;
     }
 
-    public void setSpecialties(Set<Speciality> specialties) {
-        this.specialties = specialties;
+    public void setSpecialities(Set<Speciality> specialities) {
+        this.specialities = specialities;
     }
 }
