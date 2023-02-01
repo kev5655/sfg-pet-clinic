@@ -5,7 +5,6 @@ import guru.springframework.sfgpetclinic.model.Vet;
 import guru.springframework.sfgpetclinic.repo.VetRepo;
 import guru.springframework.sfgpetclinic.service.VetService;
 import org.springframework.context.annotation.Profile;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
